@@ -1,0 +1,18 @@
+version: "2"
+services:
+  angular:
+    build: angular
+    ports:
+      - "80:80"
+  express:
+    build: server
+    ports:
+      - "4000:4000"
+
+  mongoDatabase:
+    image: mongo:4.2
+    ports:
+      - "27017:27017"
+
+    
+
